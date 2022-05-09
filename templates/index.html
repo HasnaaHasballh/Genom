@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breast cancer</title>
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/all.min.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap " rel="stylesheet ">
+</head>
+
+<body>
+
+    <!--pros-->
+    <form id="pros " class="py-3 mx-auto " action="{{ url_for('predict')}}"method="post">
+        <h1 class="w-75 text-right mx-auto ">Breast Cancer</h1>
+        <div class="w-75 text-right mx-auto ">
+            <label for="clump ">Clump Thinckness</label> <input type="text " name="clump "><br>
+            <label for="size ">Uniform Cell Size</label> <input type="text " name="size "><br>
+            <label for="shape ">Uniform Cell Shape</label> <input type="text " name="shape "><br>
+            <label for="mar ">Marginal Adhesion</label> <input type="text " name="mar "><br>
+            <label for="single ">Single Epithelial Cell Size</label> <input type="text " name="single "><br>
+            <label for="bare ">Bare Nuclei</label> <input type="text " name="bare "><br>
+            <label for="bland ">Bland Chriomatin</label> <input type="text " name="bland "><br>
+            <label for="normal ">Normal Nucleoi</label> <input type="text " name="normal "><br>
+            <label for="mitoses ">Mitoses</label> <input type="text " name="mitoses "><br>
+            {{ prediction_text }}<br>
+            
+        </div>
+        <div class="w-75 text-right mx-auto ">
+            <button type="submit " class=" ">Predict Cancer</button>
+        </div>
+    </form>
+    
+    
+
+    <script src="{{ url_for('static',filename='jquery-3.5.1.slim.min.js') }}"> </script>
+    <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"> </script>
+</body>
+
+
+</html>
+</html>

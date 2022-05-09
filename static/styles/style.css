@@ -1,0 +1,39 @@
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                background-image: url("../images/ui.jpeg");
+                                background-size: cover;
+                            }
+                            
+                            input {
+                                border-radius: 13px 13px 13px 13px;
+                                margin-bottom: 15px;
+                                border-color: white;
+                                padding: 1px;
+                                color: black
+                            }
+                            
+                            label {
+                                margin-right: 30px;
+                                margin-bottom: 20px;
+                            }
+                            
+                            button {
+                                border-radius: 20px 20px 20px 20px;
+                                padding: 5px 60px 5px 60px;
+                                background-color: #CC6A69;
+                                color: white;
+                                font-size: 18px;
+                                border-color: white;
+                            }
+                            
+                            h1 {
+                                font-family: 'Great Vibes', cursive;
+                                font-size: 90px;
+                                word-spacing: 15px;
+                                color: #CC6A69;
+                            }
